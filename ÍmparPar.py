@@ -23,14 +23,14 @@ if senha == 13 :
 else:
     print("Senha errada amigão.\n")
 
-
+#Etapa 4 do exercício
 x = float(int(input("Coordenadas do ponto x: ")))
 y = float(int(input("Coordenadas do ponto y: ")))
 if x > 0 and y > 0:
     print("Ponto no primeiro quadrante")
 elif x <0 and y > 0:
     print("Ponto segundo quadrante")
-elif x <0 and y < 0:
+elif x < 0 and y < 0:
     print("Ponto terceiro quadrante")
 elif x > 0 and y < 0:
     print("Ponto quarto quadrante")
