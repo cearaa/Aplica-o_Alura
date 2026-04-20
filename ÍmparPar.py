@@ -23,20 +23,16 @@ if senha == 13 :
 else:
     print("Senha errada amigão.\n")
 
-def condicao_coordenada():
-    coordenadasx = int(input("Coordenadas do ponto x e y (Dígite dois números seguidos: "))
-    coordenadasy = int(input("Coordenadas do ponto y: "))
-    if coordenadasx > 0 and coordenadasy > 0:
-        print("Valor do primeiro quadrante")
-    elif coordenadasx <0 and coordenadasy > 0:
-        print("Valor do segundo quadrante")
-    elif coordenadasx <0 and coordenadasy < 0:
-        print("Valor do terceiro quadrante")
-    elif coordenadasx > 0 and coordenadasy < 0:
-        print("Valor do quarto quadrante")
-    else:
-        print("Valor localizado no eixo ou origem")
 
-
-
-print(condicao_coordenada())
+x = float(int(input("Coordenadas do ponto x: ")))
+y = float(int(input("Coordenadas do ponto y: ")))
+if x > 0 and y > 0:
+    print("Ponto no primeiro quadrante")
+elif x <0 and y > 0:
+    print("Valor do segundo quadrante")
+elif x <0 and y < 0:
+    print("Valor do terceiro quadrante")
+elif x > 0 and y < 0:
+    print("Valor do quarto quadrante")
+else:
+    print("Valor localizado no eixo ou origem")
