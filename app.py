@@ -18,9 +18,13 @@ def exibir_opcoes():
 def finalizar_app():
     os.system('cls')
     print('Finalizando o app')
+    main()
 
+def opt_invalida():
+    print('Opção inválida\n')
+    input('Pressione ENTER para sair')
 def escolher_opcao():
-    escolha_num = int(input("Escolha uma opcao: "))
+    escolha_num = int(input("Escolha uma opção: "))
     #print(f"Você escolheu a opcao: {escolha_num} ")
     if escolha_num == 1:
         print("Cadastrar Restaurante")
@@ -28,10 +32,13 @@ def escolher_opcao():
         print("Listar Restaurantes")
     elif escolha_num == 3:
         print("Ativar Restaurante")
-    else:
+    elif escolha_num == 4:
         finalizar_app()
+    else:
+        opt_invalida()
 
 def main():
+    os.system('cls')
     exibir_nprograma()
     exibir_opcoes()
     escolher_opcao()
