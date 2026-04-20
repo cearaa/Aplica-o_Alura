@@ -29,10 +29,10 @@ y = float(int(input("Coordenadas do ponto y: ")))
 if x > 0 and y > 0:
     print("Ponto no primeiro quadrante")
 elif x <0 and y > 0:
-    print("Valor do segundo quadrante")
+    print("Ponto segundo quadrante")
 elif x <0 and y < 0:
-    print("Valor do terceiro quadrante")
+    print("Ponto terceiro quadrante")
 elif x > 0 and y < 0:
-    print("Valor do quarto quadrante")
+    print("Ponto quarto quadrante")
 else:
-    print("Valor localizado no eixo ou origem")
+    print("Ponto localizado num eixo ou na origem")
