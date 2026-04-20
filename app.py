@@ -30,6 +30,7 @@ def cadastrar_novo_restaurante():
     print('Cadastrando novo restaurante\n')
     nome_restaurante = input("Insira o nome do restaurante que deseja cadastrar: ")
     restaurantes.append(nome_restaurante)
+    print(f"O restaurante {nome_restaurante} foi cadastrado")
 
 def escolher_opcao():
     try:
