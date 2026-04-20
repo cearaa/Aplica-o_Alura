@@ -9,14 +9,14 @@ else:
 idade = int(input("Insira sua idade: "))
 if idade >= 0 and idade <= 13:
     print("Você é uma criança")
-elif idade >= 13 and idade <= 18:
-    print("Você é um adolescente")
+elif idade >= 13 and idade < 18:
+    print("Você é um adolescente\n")
 else:
     print("Você é um adulto\n")
 
 nome = input("Insira seu nome: ")
 if nome == "Tárik":
-    print("Esse sou eu!!")
+    print("Esse sou eu!!\n")
 senha = int(input("Insira sua senha: "))
 if senha == 13 :
     print("Acesso permitido!!\n")
@@ -24,7 +24,7 @@ else:
     print("Senha errada amigão.\n")
 
 def condicao_coordenada():
-    coordenadasx = int(input("Coordenadas do ponto x: "))
+    coordenadasxy = int(input("Coordenadas do ponto x e y (Dígite dois números seguidos: "))
     coordenadasy = int(input("Coordenadas do ponto y: "))
     if coordenadasx > 0 and coordenadasy > 0:
         print("Valor do primeiro quadrante")
@@ -37,3 +37,4 @@ def condicao_coordenada():
     else:
         print("Valor localizado no eixo ou origem")
 
+print(condicao_coordenada())
