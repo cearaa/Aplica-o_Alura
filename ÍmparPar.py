@@ -19,6 +19,21 @@ if nome == "Tárik":
     print("Esse sou eu!!")
 senha = int(input("Insira sua senha: "))
 if senha == 13 :
-    print("Acesso permitido!!")
+    print("Acesso permitido!!\n")
 else:
-    print("Senha errada amigão.")
+    print("Senha errada amigão.\n")
+
+def condicao_coordenada():
+    coordenadasx = int(input("Coordenadas do ponto x: "))
+    coordenadasy = int(input("Coordenadas do ponto y: "))
+    if coordenadasx > 0 and coordenadasy > 0:
+        print("Valor do primeiro quadrante")
+    elif coordenadasx <0 and coordenadasy > 0:
+        print("Valor do segundo quadrante")
+    elif coordenadasx <0 and coordenadasy < 0:
+        print("Valor do terceiro quadrante")
+    elif coordenadasx > 0 and coordenadasy < 0:
+        print("Valor do quarto quadrante")
+    else:
+        print("Valor localizado no eixo ou origem")
+
