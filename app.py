@@ -1,3 +1,6 @@
+import os
+
+
 print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝
@@ -13,9 +16,11 @@ print("3. Ativar Restaurante")
 print("4. Sair\n")
 
 escolha_num = int(input("Escolha uma opcao: "))
-print(f"Você escolheu a opcao: {escolha_num} ")
+#print(f"Você escolheu a opcao: {escolha_num} ")
+
 def finalizar_app():
-    print("Finalizando o app")
+    os.system('cls')
+    print('Finalizando o app')
 
 if escolha_num == 1:
     print("Cadastrar Restaurante")
