@@ -22,8 +22,9 @@ def finalizar_app():
 
 def opt_invalida():
     print('Opção inválida\n')
-    input('Pressione ENTER para sair')
+
 def escolher_opcao():
+    try:
     escolha_num = int(input("Escolha uma opção: "))
     #print(f"Você escolheu a opcao: {escolha_num} ")
     if escolha_num == 1:
