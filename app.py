@@ -25,17 +25,19 @@ def opt_invalida():
 
 def escolher_opcao():
     try:
-    escolha_num = int(input("Escolha uma opção: "))
-    #print(f"Você escolheu a opcao: {escolha_num} ")
-    if escolha_num == 1:
-        print("Cadastrar Restaurante")
-    elif escolha_num == 2:
-        print("Listar Restaurantes")
-    elif escolha_num == 3:
-        print("Ativar Restaurante")
-    elif escolha_num == 4:
-        finalizar_app()
-    else:
+        escolha_num = int(input("Escolha uma opção: "))
+        #print(f"Você escolheu a opcao: {escolha_num} ")
+        if escolha_num == 1:
+            print("Cadastrar Restaurante")
+        elif escolha_num == 2:
+            print("Listar Restaurantes")
+        elif escolha_num == 3:
+            print("Ativar Restaurante")
+        elif escolha_num == 4:
+            finalizar_app()
+        else:
+            opt_invalida()
+    except:
         opt_invalida()
 
 def main():
