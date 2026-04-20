@@ -13,3 +13,10 @@ elif idade >= 13 and idade <= 18:
     print("Você é um adolescente")
 else:
     print("Você é um adulto")
+
+nome = input("Insira seu nome: ")
+if nome == "Tárik":
+    print("Esse sou eu!!")
+senha = int(input("Insira sua senha: "))
+if senha >= 0 and senha <= :
+    print("")
