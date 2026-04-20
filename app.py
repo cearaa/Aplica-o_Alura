@@ -24,13 +24,17 @@ def finalizar_app():
 
 def opt_invalida():
     print('Opção inválida\n')
+    input("Pressione ENTER para sair")
+    main()
 
 def cadastrar_novo_restaurante():
     os.system('cls')
     print('Cadastrando novo restaurante\n')
     nome_restaurante = input("Insira o nome do restaurante que deseja cadastrar: ")
     restaurantes.append(nome_restaurante)
-    print(f"O restaurante {nome_restaurante} foi cadastrado")
+    print(f"O restaurante {nome_restaurante} foi cadastrado com sucesso!!")
+    input("Pressione ENTER para sair")
+    main()
 
 def escolher_opcao():
     try:
